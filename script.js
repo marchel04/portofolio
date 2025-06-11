@@ -11,6 +11,20 @@ hamburger?.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
 
+// Efek ketik pada nama
+const typedName = document.getElementById('typed-name');
+const fullName = "Marchelo Imanuel Salhuteru";
+let index = 0;
+
+function typeWriter() {
+  if (index < fullName.length) {
+    typedName.textContent += fullName.charAt(index);
+    index++;
+    setTimeout(typeWriter, 100); // Kecepatan ketik (100ms per karakter)
+  }
+}
+
+window.addEventListener('DOMContentLoaded', typeWriter);
 // Tutup menu saat klik link
 document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', () => {

@@ -101,19 +101,7 @@ body {
     margin: 3px 0;
     transition: 0.3s;
 }
-/*animasi nama*/
-#typed-name {
-  border-right: 2px solid #fff;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  animation: blink 0.8s infinite;
-}
 
-@keyframes blink {
-  0%, 100% { border-color: transparent; }
-  50% { border-color: #fff; }
-}
 /* Hero Section */
 .hero {
     min-height: 100vh;

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills | Marchelo Imanuel</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #1a1a2e;
+      color: #fff;
+    }
+
+    header {
+      background-color: #0f0f1b;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #ffa500;
+    }
+
+    .skills-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .skills-section h2 {
+      color: #ffa500;
+      margin-bottom: 20px;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .skill-card {
+      background: #0f0f1b;
+      padding: 20px;
+      border-radius: 12px;
+      width: 150px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.05);
+    }
+
+    .skill-card img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .skill-card p {
+      margin: 0;
+      font-weight: bold;
+    }
+
+   @media (max-width: 768px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  .skills-section {
+    padding: 40px 15px;
+  }
+
+  .skills-grid {
+    gap: 20px;
+  }
+
+  .skill-card {
+    width: 120px;
+    padding: 15px;
+  }
+
+  .skill-card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skill-card p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-section h2 {
+    font-size: 1.5em;
+  }
+
+  .skill-card {
+    width: 100px;
+    padding: 12px;
+  }
+
+  .skill-card img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill-card p {
+    font-size: 0.85em;
+  }
+
+  footer {
+    font-size: 0.8em;
+    padding: 15px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container">
+      <h1>PORTOFOLIO</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="skills.html">More Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="skills-section">
+    <h2>Teknologi & Tools</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="images/html.jpg" alt="HTML" />
+        <p>HTML</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/css.jpg" alt="CSS" />
+        <p>CSS</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/java.jpg" alt="JavaScript" />
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/bootstrap.jpg" alt="Bootstrap" />
+        <p>Bootstrap</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/figma.jpg" alt="Figma" />
+        <p>Figma</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Marchelo Imanuel. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

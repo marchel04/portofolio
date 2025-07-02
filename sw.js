@@ -1,17 +1,17 @@
 const CACHE_NAME = "portfolio-cache-v1";
 
 const urlsToCache = [
-  "/portofolio/",
-  "/portofolio/index.html",
-  "/portofolio/skills.html",
-  "/portofolio/manifest.json",
-  "/portofolio/sw.js",
-  "/portofolio/images/profil.jpg",
-  "/portofolio/images/html.jpg",
-  "/portofolio/images/css.jpg",
-  "/portofolio/images/java.jpg",
-  "/portofolio/images/bootstrap.jpg",
-  "/portofolio/images/figma.jpg",
+  "/",
+  "/index.html",
+  "/skills.html",
+  "/manifest.json",
+  "/sw.js",
+  "/images/profil.jpg",
+  "/images/html.jpg",
+  "/images/css.jpg",
+  "/images/java.jpg",
+  "images/bootstrap.jpg",
+  "images/figma.jpg",
 ];
 
 // Gunakan fetch manual agar bisa log file mana yang gagal

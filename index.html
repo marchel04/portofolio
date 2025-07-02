@@ -168,65 +168,54 @@
       color: #ccc;
     }
 
-@media screen and (max-width: 768px) {
-  .nav .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav nav {
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .nav nav a {
-    margin: 0;
-  }
-
-  .hero {
-    flex-direction: column-reverse;
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .hero h2 {
-    font-size: 1.8em;
-  }
-
-  .hero p {
-    font-size: 1em;
-  }
-
-  .hero .image img {
-    width: 160px;
-    margin-top: 30px;
-  }
-
-  .skills .icons {
-    gap: 15px;
-  }
-
-  .skills img {
-    width: 50px;
-  }
-
-  .contact form {
-    width: 100%;
-    padding: 0 10px;
-  }
-
-  .contact input,
-  .contact textarea {
-    font-size: 0.9em;
-  }
-
-  .contact button {
-    font-size: 0.9em;
-  }
+    .contact {
+  background: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
 }
 
+.contact h2 {
+  color: #ffa500;
+  margin-bottom: 30px;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #0f0f1b;
+  color: white;
+  font-size: 1em;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #aaa;
+}
+
+.contact button {
+  padding: 12px;
+  background-color: #ffa500;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact button:hover {
+  background-color: #e69500;
+}
 
   </style>
 </head>

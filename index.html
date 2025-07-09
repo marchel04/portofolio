@@ -5,9 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio | Marchelo Imanuel</title>
+  <!-- Menghubungkan file manifest.json untuk konfigurasi PWA (Progressive Web App) -->
   <link rel="manifest" href="manifest.json" />
+  <!-- Memuat file JavaScript utama (main.js) secara defer agar dijalankan setelah HTML selesai diurai -->
 <script src="scripts/main.js" defer></script>
+  <!-- Menghubungkan lebih awal ke domain fonts.googleapis.com untuk mempercepat pemuatan font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Memuat font Poppins dari Google Fonts dengan bobot 400 (normal) dan 600 (semi-bold) -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -121,41 +125,41 @@
       transform: scale(1.2);
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) { /* Mengatur .nav .container menjadi kolom dan rata kiri saat di layar kecil */
   .nav .container {
     flex-direction: column;
     align-items: flex-start;
   }
-
+/* Hero section jadi kolom terbalik: gambar di bawah teks, dan teks diratakan ke tengah */
   .hero {
     flex-direction: column-reverse;
     text-align: center;
   }
-
+  /* Ukuran gambar dalam .hero dikurangi untuk layar kecil dan diberi margin atas */
   .hero .image img {
     width: 180px;
     margin-top: 30px;
   }
-
+  /* Jarak antar ikon di bagian .skills lebih rapat */
   .skills .icons {
     gap: 15px;
   }
-
+  /* Ukuran ikon skill diperkecil */
   .skills img {
     width: 50px;
   }
-
+  /* Navigasi di dalam .nav ditampilkan dalam format fleksibel dan bisa pindah baris */
   .nav nav {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
   }
-
+  /* Menghilangkan margin default pada link navigasi untuk menghemat ruang */
   .nav nav a {
     margin: 0;
   }
-
+  /* Ukuran judul di bagian .hero disesuaikan agar tetap terbaca di layar kecil */
   .hero h2 {
     font-size: 1.8em;
   }
@@ -169,53 +173,53 @@
       color: #ccc;
     }
 
-    .contact {
-  background: #1a1a2e;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
+    .contact { 
+  background: #1a1a2e; /* Warna latar belakang gelap untuk section kontak */
+  color: white;/* Warna teks default putih */
+  text-align: center;/* Semua teks di tengah */
+  padding: 60px 20px; /* Spasi atas-bawah 60px, kiri-kanan 20px */
 }
 
-.contact h2 {
-  color: #ffa500;
-  margin-bottom: 30px;
+.contact h2 { 
+  color: #ffa500; /* Judul (h2) menggunakan warna oranye */
+  margin-bottom: 30px;  /* Spasi bawah 30px dari h2 ke elemen berikutnya */
 }
 
-.contact form {
-  max-width: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.contact form { 
+  max-width: 500px;   /* Lebar maksimum form dibatasi 500px */
+  margin: auto; /* Membuat form berada di tengah (horizontal) */
+  display: flex; /* Flexbox untuk tata letak kolom */
+  flex-direction: column;  /* Susun elemen form secara vertikal */
+  gap: 15px; /* Jarak antar elemen form */
 }
 
 .contact input,
 .contact textarea {
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  background: #0f0f1b;
-  color: white;
-  font-size: 1em;
+  padding: 12px; /* Spasi dalam elemen input/textarea */
+  border: none; /* Menghilangkan border bawaan */
+  border-radius: 5px; /* Membuat sudut sedikit membulat */
+  background: #0f0f1b; /* Latar input berwarna lebih gelap */
+  color: white; /* Warna teks putih */
+  font-size: 1em; /* Ukuran teks standar (16px) */
 }
 
-.contact input::placeholder,
+.contact input::placeholder, 
 .contact textarea::placeholder {
-  color: #aaa;
+  color: #aaa; /* Warna placeholder abu-abu terang */
 }
 
 .contact button {
-  padding: 12px;
-  background-color: #ffa500;
-  border: none;
-  color: #000;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
+  padding: 12px; /* Spasi dalam tombol */
+  background-color: #ffa500; /* Warna tombol oranye */
+  border: none; /* Menghilangkan border */
+  color: #000; /* Teks tombol berwarna hitam */
+  font-weight: bold; /* Teks tombol dicetak tebal */
+  cursor: pointer; /* Menampilkan pointer saat diarahkan ke tombol */
+  border-radius: 5px; /* Sudut tombol membulat */
 }
 
 .contact button:hover {
-  background-color: #e69500;
+  background-color: #e69500; /* Warna tombol berubah saat di-hover */
 }
 
   </style>
@@ -263,8 +267,11 @@
   <section id="contact" class="contact">
   <h2>Contact Me</h2>
   <form action="#" method="POST">
+    <!-- Input untuk nama lengkap, wajib diisi -->
     <input type="text" name="name" placeholder="Nama Lengkap" required>
+    <!-- Input untuk email, wajib diisi dan akan divalidasi sebagai email -->
     <input type="email" name="email" placeholder="Email" required>
+    <!-- Textarea untuk isi pesan, 5 baris tinggi, wajib diisi -->
     <textarea name="message" rows="5" placeholder="Pesan Anda..." required></textarea>
     <button type="submit">Kirim</button>
   </form>

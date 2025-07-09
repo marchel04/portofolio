@@ -80,58 +80,60 @@
     }
 
    @media (max-width: 768px) {
+       /* Ukuran font pada <h1> di header diperkecil agar pas di layar kecil */
   header h1 {
     font-size: 22px;
   }
-
+  /* Padding di section skills dikurangi agar konten tidak terlalu melebar */
   .skills-section {
     padding: 40px 15px;
   }
-
+  /* Jarak antar item grid skill dibuat lebih rapat */
   .skills-grid {
     gap: 20px;
   }
-
+  /* Ukuran kartu skill diperkecil agar muat di layar kecil */
   .skill-card {
     width: 120px;
     padding: 15px;
   }
-
+  /* Ukuran ikon skill diperkecil agar tetap proporsional */
   .skill-card img {
     width: 50px;
     height: 50px;
   }
-
+  /* Ukuran teks nama skill sedikit diperkecil */
   .skill-card p {
     font-size: 0.9em;
   }
 }
 
 @media (max-width: 480px) {
+    /* Ukuran heading di section skill diperkecil agar tetap proporsional */
   .skills-section h2 {
     font-size: 1.5em;
   }
-
+  /* Kartu skill dibuat lebih kecil agar muat di layar kecil */
   .skill-card {
     width: 100px;
     padding: 12px;
   }
-
+  /* Ikon di dalam kartu skill juga diperkecil */
   .skill-card img {
     width: 40px;
     height: 40px;
   }
-
+  /* Ukuran teks nama skill diperkecil */
   .skill-card p {
     font-size: 0.85em;
   }
-
+  /* Tampilan footer dioptimalkan untuk mobile: tengah, spasi, dan ukuran teks */
   .footer {
       text-align: center;
       padding: 20px;
-      background: #000;
-      font-size: 0.9em;
-      color: #ccc;
+      background: #000; /* Warna latar belakang hitam */
+      font-size: 0.9em; /* Ukuran teks sedikit diperkecil */
+      color: #ccc; /* Warna teks abu-abu terang */
     }
 }
 

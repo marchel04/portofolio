@@ -1,21 +1,21 @@
 {
-  "name": "Portofolio Marchelo",
-  "short_name": "Portofolio",
-  "start_url": "/index.html",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#FFA500",
-  "orientation": "portrait",
-  "icons": [
+  "name": "Portofolio Marchelo",//Nama lengkap aplikasi yang akan muncul saat diinstal di perangkat
+  "short_name": "Portofolio",// Nama singkat yang digunakan di homescreen jika ruang terbatas
+  "start_url": "/index.html",// URL yang dibuka saat pengguna menjalankan aplikasi dari homescreen
+  "display": "standalone",// Tampilan aplikasi seperti native app (tanpa address bar dan tab browser)
+  "background_color": "#000000",// Warna latar belakang saat aplikasi diluncurkan (sebelum konten dimuat)
+  "theme_color": "#FFA500",// Warna tema utama pada browser (misalnya status bar di Android)
+  "orientation": "portrait",// Aplikasi hanya akan ditampilkan dalam orientasi potret
+  "icons": [ // Daftar ikon yang digunakan untuk shortcut/homescreen di berbagai perangkat
     {
-      "src": "images/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
+      "src": "images/icon-192.png",// Lokasi file ikon berukuran 192x192 piksel
+      "sizes": "192x192",// Ukuran fisik ikon
+      "type": "image/png"// Tipe MIME dari ikon (format PNG)
     },
     {
-      "src": "images/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "images/icon-512.png",// Ikon resolusi tinggi untuk perangkat dengan layar besar
+      "sizes": "512x512",// Ukuran fisik ikon
+      "type": "image/png"// Tipe MIME dari ikon (format PNG)
     }
   ]
 }

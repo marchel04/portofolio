@@ -1,7 +1,7 @@
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("sw.js")  // ✅ tanpa / dan tanpa ../
-      .then(reg => console.log("Service Worker registered:", reg.scope))
-      .catch(err => console.error("Service Worker registration failed:", err));
+if ("serviceWorker" in navigator) {// Mengecek apakah browser mendukung Service Worker
+  window.addEventListener("load", () => {// Tunggu sampai seluruh halaman dimuat
+    navigator.serviceWorker.register("sw.js")  // Registrasi service worker dari file sw.js di direktori yang sama
+      .then(reg => console.log("Service Worker registered:", reg.scope))// Jika berhasil, tampilkan pesan dan scope-nya
+      .catch(err => console.error("Service Worker registration failed:", err));// Jika gagal, tampilkan pesan error
   });
 }
